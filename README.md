@@ -1,11 +1,11 @@
 # R. A. M. [Redes Autónomas de Memoria] 
+
+![sistema](https://github.com/MarianneTeixido/ram-init/blob/main/img/RAM-init.jpg)
+
 English below
 
-## Diseño del sistema
 
-Agregar imagen del workflow
-
-## Speech-to text
+## Speech-to-text
 
 [Librería Speech Recognition](https://pypi.org/project/SpeechRecognition/)
 
