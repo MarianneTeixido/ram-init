@@ -1,0 +1,24 @@
+hi how are you I'm fine and I will drive to right with this
+hola esta es una prueba del funcionamiento de la librería de speech-recognition leeré algunas cosas ver y no ver moraleja antecedentes visualización pública de los testimonios claves color tipo de trato el testimonio operación nominal
+hola estamos probando lo que haces
+qué cuentas qué haces no sé qué decir
+cuando los niños van con la señora caminando niños miran al Señor que les dice que niño
+pero cuándo vas a tener algo que decir lo está guardando en el texto
+mira si si le va le va enseñando
+pero mira ahora si hizo algo no puedes hablar o no puedes hablar porque estamos probando y hay veces en las que las tornamesas las personas que caminan
+ahora claro ella no te está repitiendo lo que tú le dices nada te está diciendo esto pues lo que tú dijiste si quieres que te repite lo que lo que está bien y que te contesté algo
+Pro y entonces
+esas palabras
+puedes cómo escribir cosas que sean con si para que se vaya por otro lado no lugar de que busque Titi
+si tienes otras cosas que decir a veces no
+él está rapeando
+ya está pensando un poco
+oye pero pareciera que si es inteligente no sé cómo que si es que lo hace con probabilidad no o sea entonces es como que entre más le hablas más tienen tiene capacidad de entender que va que normalmente va después de una palabra no sé a cuál es la probabilidad de que venga es otra palabra con que puede no bueno después de yo por eso hace un poco de sentido y ya después te digo
+hola cómo estás computadora negras
+hola cómo estás por acá todo bien
+hola por aquí todo bien viendo Emilio cómo se agarra la cabeza tú qué haces
+hola cómo vas caminando por ahí mirando a la playa con una botella
+hola hay una caja tirada en el piso y tú cómo vas hablas
+aunque bueno ahí como que realmente está como un
+bueno iba a seguir hablando no tú sigue sigue y en teoría esto lo está guardando en texto se pide eso mismo está tomando un peso de 0.3 para sacar no entonces tendré que modificarlo de forma tal que como que le diera y un peso no estoy segura eso no sé qué es que no conozco Margarita de combate no es mala
+la mismo peso no bueno solo estoy hablando para poder alimentar un poco más la base de datos que ya tienes almacenada con esas cajas negras que vamos descubriendo puedes decir algo

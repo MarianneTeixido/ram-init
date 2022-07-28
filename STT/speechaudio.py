@@ -73,6 +73,17 @@ with audioIn as source:
     write_to_file(MyText)
 
 
+    new_frase = generate_sentence("textosave.txt",1,50)
+    print("Computadora dice: " +new_frase)
+    os.system("echo "+new_frase+" |iconv -f utf-8 -t iso-8859-15 | festival --tts")
+
+except sr.RequestError as e:
+    print("Could not request results; {0}".format(e))
+except sr.UnknownValueError:
+    print("unknown error occured")
+
+
+
         #except sr.RequestError as e:
         #print("Could not request results; {0}".format(e))
         #  except sr.UnknownValueError:

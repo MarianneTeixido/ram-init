@@ -7,22 +7,25 @@ import markovify
 import re
 import numpy as np
 
-def generate_sentence(text, n, nchar):
-    with open(text) as f:
-        data = f.read()
+def generate_frase():
+    text_array = []
+    files = [f for f in os.listdir('./textos/') if os.path.isfile(os.path.join("./textos/", f))]
+    for f in files:
+        print(f)
+#Get raw text as string.
+        with open("./textos/"+f) as g:
+            text_g = g.read()
+            text_array.append(markovify.Text(text_g))
+    # Si hay más archivos txt, no olvidar modificar pesos de markovify.combine
+#    model_combo = markovify.combine(text_array, [0.2, 1.0, 0.8, 0.4,0.3])
+    model_combo = markovify.combine(text_array)
+    frase = model_combo.make_short_sentence(280)
+    if(frase is not None):
+        return frase
+    else:
+        return("No tengo nada que decir")
+    #print(text_array)
 
-    result = []
-    data_model = markovify.NewlineText(data)
-    #model_json = data_model.to_json()
-    # Here you choose how many sentences do you want to generate
-    for i in range(n):
-        #print(data_model.make_short_sentence(100,tries=100)) # you can also choose max characters
-        temp = data_model.make_short_sentence(nchar, tries=100, max_overlap_ratio = 80, state_size = 3)
-        if(temp is not None):
-            result.append(temp)
-            return(temp)
-        else:
-            return("I have nothing to say")
 
     #with open("test.txt", 'a+') as file:
     #    for line in result:
@@ -41,7 +44,7 @@ def text_cleaner(text):
 
 # Write text to file
 def write_to_file(text):
-    with open('/home/unyxt/github/ram-stt/STT/textosave.txt', 'a') as f:
+    with open('./textos/textosave.txt', 'a') as f:
         f.write(text + "\n")
         f.close()
 
@@ -72,7 +75,11 @@ while(True):
             write_to_file(MyText)
 
 
+            new_frase = generate_frase()
+            print("Computadora dice: " +new_frase)
+            os.system("echo "+new_frase+" |iconv -f utf-8 -t iso-8859-15 | festival --tts")
+
     except sr.RequestError as e:
-        print("Could not request results; {0}".format(e))
+            print("Could not request results; {0}".format(e))
     except sr.UnknownValueError:
-        print("unknown error occured")
+            print("unknown error occured")
